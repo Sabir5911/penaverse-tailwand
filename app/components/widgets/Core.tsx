@@ -1,8 +1,11 @@
 import React from 'react'
 import Wrapper from '../shared/Wrapper'
 import Button from '../shared/Button'
+import { Data } from './Data/Data'
 export default function Core() {
     const para='Core Course \n(Common in All Specializations)'
+
+  
   return <>
   <section className='mt-16 lg:mt-28'>
     <Wrapper>
@@ -17,27 +20,21 @@ export default function Core() {
 
     </div>
 </div>
-<div className='my-20 flex space-x-12'>
-    <div className='border rounded-md w-4/12 py-12 px-8 relative '>
-        <h4 className='font-bold text-xl'>Quater1</h4>
-        <p className='mt-2'>CS-101: Object-Oriented Programming using TypeScript</p>
-        <span className='absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-300'>1</span>
-    </div>
-    <div className='border rounded-md w-4/12 p-12  relative'>
-        <h4 className='font-bold text-xl'>Quater1</h4>
-        <p className='mt-2'>CS-101: Object-Oriented Programming using TypeScript</p>
-        <span className='absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-300'>2</span>
-    </div> <div className='border rounded-md w-4/12 p-12  relative'>
-        <h4 className='font-bold text-xl'>Quater1</h4>
-        <p className='mt-2'>CS-101: Object-Oriented Programming using TypeScript</p>
-        <span className='absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-300'>3</span>
-    </div>
-   
+<div className='my-20 flex md:flex-row flex-col space-x-10 '>
+    {
+        Data.map((elm)=>(
+            <div className='border rounded-md w-4/12 py-16 flex-1 px-8 relative  flex flex-col justify-center '>
+            <h4 className='font-bold text-xl'>{elm.Header}</h4>
+            <p className='mt-2'>{elm.discription}</p>
+            <span className='absolute -top-10 right-10 text-[170px] font-bold -z-10 text-gray-300'>{elm.Number}</span>
+        </div>
+        ))
+    }
+    
+
 </div>
-
-
 
     </Wrapper>
   </section>
   </>
-}
+} 

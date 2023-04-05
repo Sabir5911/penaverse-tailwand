@@ -7,5 +7,4 @@ const Wrapper:FC <{Text:string}>= ({Text}) => {
     </button>
   )
 }
-
 export default Wrapper
