@@ -61,7 +61,7 @@ export const Special = () => {
                                     <div>
                                         <div className='flex gap-x-4 items-center pointer justify-evenly' key={id}>
                                             <div>
-                                                <Image src={elm.image} width='110' height={'80'} alt='box' className='shadow-lg' /></div>
+                                                <Image src={elm.image} width='120' height={'80'} alt='box' className='shadow-lg' /></div>
                                             <div>
                                                 <h3 className='text-teal-600 text-lg  font-bold'>
                                                     {elm.Header}
