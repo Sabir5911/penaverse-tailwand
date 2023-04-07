@@ -1,13 +1,13 @@
-import React from 'react'
 import Wrapper from '../shared/Wrapper'
 import Button from '../shared/Button'
 import { Data } from './Data/Data'
+import  Boxses from '../shared/Boxes'
 export default function Core() {
     const para='Core Course \n(Common in All Specializations)'
 
   
   return <>
-  <section className='mt-16 lg:mt-28'>
+  <section className='mt-16 lg:mt-28 relative'>
     <Wrapper>
 <div className='max-w-screen-md'>
     <div>
@@ -19,20 +19,19 @@ export default function Core() {
     <Button Text='Learn More' />
 
     </div>
-</div>
-<div className='my-20 flex md:flex-row flex-col space-x-10 '>
+</div>    
+<div className='my-20 flex md:flex-row flex-col space-x-10 cursor-pointer '>
     {
-        Data.map((elm)=>(
-            <div className='border rounded-md w-4/12 py-16 flex-1 px-8 relative  flex flex-col justify-center '>
-            <h4 className='font-bold text-xl'>{elm.Header}</h4>
-            <p className='mt-2'>{elm.discription}</p>
-            <span className='absolute -top-10 right-10 text-[170px] font-bold -z-10 text-gray-300'>{elm.Number}</span>
-        </div>
+        Data.map((elm,id)=>(
+                        <Boxses Header={elm.Header} discription={elm.discription} Number={elm.Number} key={id} className='hover:text-red-600 ' />
+
+       
         ))
     }
     
-
+ 
 </div>
+
 
     </Wrapper>
   </section>
