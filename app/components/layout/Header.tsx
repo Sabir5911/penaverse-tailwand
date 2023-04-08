@@ -5,9 +5,11 @@ import logo from '../../assets/logo.svg'
 import Wrapper from '../shared/Wrapper'
 export default function () {
   return <>
+<div className='sticky top-0'>
+
   <Wrapper>
 
-    <header  className='flex justify-between  py-3 bg-white sticky top-0 items-center'  >
+    <header  className='flex justify-between  py-3 bg-white items-center sticky top-0'  >
         <div>
 
             <Image src={logo} alt='penaverse logo'/>
@@ -26,7 +28,9 @@ export default function () {
                 </li>
         </ul>
     </header>
+
     </Wrapper>
+    </div>
 
   </>
 

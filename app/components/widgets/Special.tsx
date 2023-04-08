@@ -26,9 +26,9 @@ console.log(selecteditem);
 
                 <div className='flex flex-row gap-x-6 gap-y-6'>
 
-                    <div className=' shadow-xl rounded-lg border border-slate-300 py-8 px-6 basis-8/12'>
+                    <div className=' sticky top-32 self-start shadow-xl rounded-lg border border-slate-300 py-8 px-6 basis-8/12 max-h-[600px]'>
                         <h4 className='text-teal-600 text-lg'>Specialized Program</h4>
-                        <h2 className='text-2xl font-semibold mt-2'>{selecteditemdata?.Header} <br /> Specialization</h2>
+                        <h2 className='text-2xl font-semibold mt-2'>{selecteditemdata?.Header}  Specialization</h2>
                         <p className='text-lg text-slate-600 mt-3 max-w-3xl'>
                            {selecteditemdata?.discription}
                         </p>
