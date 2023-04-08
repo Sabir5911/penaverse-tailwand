@@ -20,19 +20,7 @@ export const Data =[
 ]
 
 
-export const Data1=[
-    {id:4,
-        Header:"Quater IV",
-        discription:"CS-101: Object-Oriented Programming using TypeScript",
-        Number:'4'
-    },    {
-        id:5,
-        Header:"Quater V",
-        discription:"CS-101: Object-Oriented Programming using TypeScript",
-        Number:'5'
-    },
-   
-]
+
 
 export const Data2=[
     {id:1,
@@ -72,4 +60,57 @@ export const Data2=[
     },     
 
 
+]
+
+export const data3=[
+    {
+        id:1,
+        Header:"Web 3.0 (Blockchain) and Metaverse Specialization",
+        discription:  `
+        This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge
+         decentralized distributed blockchains with 3D metaverse client experiences.
+        `,
+        image:'/box1.png',
+        
+        Quaters:[
+            {
+                Header:"Quater IV ",
+                discription:" W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform  ",
+                  Number:"4",
+            },
+
+            {
+                Header:"Quater V ",
+                discription:"  W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform",
+                Number:"5",
+            },
+        ]   
+
+        },
+        {
+            id:2,
+            Header:"Ai",
+            discription:  `
+            This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge
+             decentralized distributed blockchains with 3D metaverse client experiences.
+            `,
+            image:'/box1.png',
+            Quaters:[
+                {
+                    Header:"Quater IV ",
+                    discription:" W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform  ",
+                    Number:"4",
+
+                },
+
+                {
+                    Header:"Quater V ",
+                    discription:"   W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform",
+                    Number:"5",
+
+                },
+            ]   
+    
+            }
+    
 ]
