@@ -12,7 +12,7 @@ export const Special = () => {
 const selecteditemdata=data3.find((elm)=>elm.id===selecteditem)
 
     return <>
-        <section  className='mt-40'>
+        <section  className='mt-32'>
             <Wrapper>
                 {/* <Header> */}
                 <div >
