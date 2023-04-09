@@ -10,7 +10,6 @@ export const Special = () => {
  
  const [selecteditem,setselecteditem]= useState(1)
 const selecteditemdata=data3.find((elm)=>elm.id===selecteditem)
-console.log(selecteditem);    
 
     return <>
         <section  className='mt-40'>
